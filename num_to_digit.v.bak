@@ -1,0 +1,10 @@
+module num_to_digit(resultado, D1, D2);
+	
+	input [7:0] resultado;
+	output [3:0] D1, D2;
+	
+	assign D1  = (resultado>>1)/ 'd10; 
+	assign D2  = (resultado>>1)- D1*'d10;
+
+endmodule
+
